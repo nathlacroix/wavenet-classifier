@@ -23,7 +23,8 @@ class WaveNetClassifier():
       regression_range: (list or tuple) target range of regression task
       load: (bool) load previous WaveNetClassifier or not
       load_dir: (string) the directory where the previous model exists
-    """      
+    """
+    self.task = task
     # save task info
     if task == 'regression':
       if regression_range[0] == 0:
